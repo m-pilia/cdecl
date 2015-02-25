@@ -30,7 +30,7 @@ A BNF description of the grammar is the following:
                ddecl "(" fdecll ")"
 ````
 
-The recognization of these four nonterminal symbols is implemented in the
+The recognition of these four nonterminal symbols is implemented in the
 four homonymous functions.
 
 Other facts are considered to detect syntax errors:

@@ -49,7 +49,7 @@
  *                ddecl "(" fdecll ")"
  * \endcode
  *
- * The recognization of these four nonterminal symbols is implemented in the
+ * The recognition of these four nonterminal symbols is implemented in the
  * four homonymous functions.
  *
  * Other facts are considered to detect syntax errors:
@@ -481,12 +481,12 @@ void get_bracket_content(char *line, char *qualifier, int *stat, char *length)
  * <pre>
  *           void  char  short  int  long  float  double  signed  unsigned
  * void      n     n     n      n    n     n      n       n       n
- * char      n     n     n      n    n     n      n       YES     Y
- * short     n     n     n      YES  n     n      n       YES     Y
- * int       n     n     YES    n    YES   n      n       YES     Y
- * long      n     n     n      YES  YES   n      n       YES     Y
- * float     n     n     n      n    n     n      n       YES     Y
- * double    n     n     n      n    YES   n      n       YES     Y
+ * char      n     n     n      n    n     n      n       YES     YES
+ * short     n     n     n      YES  n     n      n       YES     YES
+ * int       n     n     YES    n    YES   n      n       YES     YES
+ * long      n     n     n      YES  YES   n      n       YES     YES
+ * float     n     n     n      n    n     n      n       YES     YES
+ * double    n     n     n      n    YES   n      n       YES     YES
  * signed    n     YES   YES    YES  YES   YES    YES     n       n
  * unsigned  n     YES   YES    YES  YES   YES    YES     n       n
  * </pre>
